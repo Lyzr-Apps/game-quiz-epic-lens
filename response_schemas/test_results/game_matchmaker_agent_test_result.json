@@ -1,0 +1,87 @@
+{
+  "agent_name": "Game Matchmaker Agent",
+  "agent_id": "6984dfd4ee065bca253754c6",
+  "test_message": "I've answered: 3-4 players, medium complexity, cooperative gameplay, fantasy theme, 60-90 minute sessions, and I prefer games with story elements. Please give me my top 3 game recommendations.",
+  "expected_purpose": "recommendation",
+  "timestamp": "2026-02-05T18:24:46.097772",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "quiz_status": "complete",
+      "recommendations": [
+        {
+          "rank": 1,
+          "game_name": "Moon Adventures",
+          "match_score": 95,
+          "match_explanation": "Moon Adventures is a cooperative board game that excels with 3-4 players and features a medium complexity level. Its space survival theme is strongly story-driven, requiring the team to work together to survive peril on the moon. This perfectly matches your preferences for cooperative play, story elements, and 60-90 minute sessions.",
+          "box_art_url": "https://serpapi.com/searches/6984e02c9b762d7356fab24f/images/kdCqteu5yi-Xzi2W1qmwUFZCnkcjkHNtGvrYrSsA8T4.jpeg",
+          "key_attributes": {
+            "player_count": "2-5 (best at 3-4)",
+            "complexity": "Medium",
+            "play_time": "30-60 minutes (can extend with story elements)",
+            "themes": [
+              "Cooperation",
+              "Space Survival",
+              "Story-Driven"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "game_name": "Clank!",
+          "match_score": 91,
+          "match_explanation": "Clank! is an adventure deck-building game with a strong fantasy narrative and exploration. Although it's typically competitive, many story scenarios and expansions incorporate cooperative teamwork or semi-coop twists. The game's thematic dungeon-delving and story-driven card combinations make it a great fit for your love of fantasy, story, and a medium level of complexity with 3-4 players.",
+          "box_art_url": "https://serpapi.com/searches/6984e02c8da5eafc4483fab7/images/2cIlsUBb7V9Hf61nMc6vFAZ4XFL9MG-RAaKQfGdE6LU.jpeg",
+          "key_attributes": {
+            "player_count": "2-4 (best at 3-4)",
+            "complexity": "Medium",
+            "play_time": "60-90 minutes",
+            "themes": [
+              "Fantasy",
+              "Adventure",
+              "Deck-Building",
+              "Story Elements"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "game_name": "Hanabi",
+          "match_score": 84,
+          "match_explanation": "Hanabi is a cooperative puzzle game for 3-5 players where everyone must communicate creatively to create a beautiful fireworks show. It is great with 3-4 players, is story-lite but often generates memorable narratives through play. It's especially satisfying if you want a shorter, storyful cooperative challenge.",
+          "box_art_url": "https://serpapi.com/searches/6984e02c66bc7888bcc0ddc6/images/scabUCYSzpIywBe-K8zMKkEFgyQ-XtSjNmd-Y97S16A.jpeg",
+          "key_attributes": {
+            "player_count": "2-5 (best at 3-4)",
+            "complexity": "Light-Medium",
+            "play_time": "20-30 minutes",
+            "themes": [
+              "Cooperation",
+              "Puzzle",
+              "Creative Communication"
+            ]
+          }
+        }
+      ],
+      "quiz_summary": {
+        "total_questions_asked": 6,
+        "user_preferences_identified": {
+          "player_count": "3-4 players",
+          "complexity": "Medium",
+          "gameplay": "Cooperative",
+          "themes": [
+            "Fantasy",
+            "Story Elements"
+          ],
+          "play_time": "60-90 minutes"
+        }
+      }
+    },
+    "metadata": {
+      "agent_name": "Game Matchmaker Agent",
+      "timestamp": "2026-02-05T18:25:00Z"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"quiz_status\": \"complete\",\n    \"recommendations\": [\n      {\n        \"rank\": 1,\n        \"game_name\": \"Moon Adventures\",\n        \"match_score\": 95,\n        \"match_explanation\": \"Moon Adventures is a cooperative board game that excels with 3-4 players and features a medium complexity level. Its space survival theme is strongly story-driven, requiring the team to work together to survive peril on the moon. This perfectly matches your preferences for cooperative play, story elements, and 60-90 minute sessions.\",\n        \"box_art_url\": \"https://serpapi.com/searches/6984e02c9b762d7356fab24f/images/kdCqteu5yi-Xzi2W1qmwUFZCnkcjkHNtGvrYrSsA8T4.jpeg\",\n        \"key_attributes\": {\n          \"player_count\": \"2-5 (best at 3-4)\",\n          \"complexity\": \"Medium\",\n          \"play_time\": \"30-60 minutes (can extend with story elements)\",\n          \"themes\": [\"Cooperation\", \"Space Survival\", \"Story-Driven\"]\n        }\n      },\n      {\n        \"rank\": 2,\n        \"game_name\": \"Clank!\",\n        \"match_score\": 91,\n        \"match_explanation\": \"Clank! is an adventure deck-building game with a strong fantasy narrative and exploration. Although it's typically competitive, many story scenarios and expansions incorporate cooperative teamwork or semi-coop twists. The game's thematic dungeon-delving and story-driven card combinations make it a great fit for your love of fantasy, story, and a medium level of complexity with 3-4 players.\",\n        \"box_art_url\": \"https://serpapi.com/searches/6984e02c8da5eafc4483fab7/images/2cIlsUBb7V9Hf61nMc6vFAZ4XFL9MG-RAaKQfGdE6LU.jpeg\",\n        \"key_attributes\": {\n          \"player_count\": \"2-4 (best at 3-4)\",\n          \"complexity\": \"Medium\",\n          \"play_time\": \"60-90 minutes\",\n          \"themes\": [\"Fantasy\", \"Adventure\", \"Deck-Building\", \"Story Elements\"]\n        }\n      },\n      {\n        \"rank\": 3,\n        \"game_name\": \"Hanabi\",\n        \"match_score\": 84,\n        \"match_explanation\": \"Hanabi is a cooperative puzzle game for 3-5 players where everyone must communicate creatively to create a beautiful fireworks show. It is great with 3-4 players, is story-lite but often generates memorable narratives through play. It's especially satisfying if you want a shorter, storyful cooperative challenge.\",\n        \"box_art_url\": \"https://serpapi.com/searches/6984e02c66bc7888bcc0ddc6/images/scabUCYSzpIywBe-K8zMKkEFgyQ-XtSjNmd-Y97S16A.jpeg\",\n        \"key_attributes\": {\n          \"player_count\": \"2-5 (best at 3-4)\",\n          \"complexity\": \"Light-Medium\",\n          \"play_time\": \"20-30 minutes\",\n          \"themes\": [\"Cooperation\", \"Puzzle\", \"Creative Communication\"]\n        }\n      }\n    ],\n    \"quiz_summary\": {\n      \"total_questions_asked\": 6,\n      \"user_preferences_identified\": {\n        \"player_count\": \"3-4 players\",\n        \"complexity\": \"Medium\",\n        \"gameplay\": \"Cooperative\",\n        \"themes\": [\"Fantasy\", \"Story Elements\"],\n        \"play_time\": \"60-90 minutes\"\n      }\n    }\n  },\n  \"metadata\": {\n    \"agent_name\": \"Game Matchmaker Agent\",\n    \"timestamp\": \"2026-02-05T18:25:00Z\"\n  }\n}"
+}

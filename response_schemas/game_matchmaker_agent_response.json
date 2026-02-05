@@ -1,0 +1,207 @@
+{
+  "agent_name": "Game Matchmaker Agent",
+  "agent_id": "6984dfd4ee065bca253754c6",
+  "agent_purpose": "recommendation",
+  "description": "Adaptive quiz-based board game recommendation agent that returns quiz questions during quiz flow and top 3 game recommendations with match scores, explanations, box art, and key attributes when quiz is complete.",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "quiz_status": "string",
+      "recommendations": [
+        {
+          "rank": "number",
+          "game_name": "string",
+          "match_score": "number",
+          "match_explanation": "string",
+          "box_art_url": "string",
+          "key_attributes": {
+            "player_count": "string",
+            "complexity": "string",
+            "play_time": "string",
+            "themes": [
+              "string"
+            ]
+          }
+        }
+      ],
+      "quiz_summary": {
+        "total_questions_asked": "number",
+        "user_preferences_identified": {
+          "player_count": "string",
+          "complexity": "string",
+          "themes": [
+            "string"
+          ],
+          "play_time": "string"
+        }
+      }
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "quiz_status": "complete",
+      "recommendations": [
+        {
+          "rank": 1,
+          "game_name": "Powergrid",
+          "match_score": 94,
+          "match_explanation": "Ideal for groups of 2-6 seeking strategic depth, Powergrid excels at resource management and auction mechanics. Your preferences for economic themes, route building, and complex player interaction are perfectly represented here.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/HlhF_mQ2DRLjg9qR-AIEzT84YrM=/0x0/pic445812.jpg",
+          "key_attributes": {
+            "player_count": "2-6",
+            "complexity": "Medium-Heavy",
+            "play_time": "90-120 minutes",
+            "themes": [
+              "Economic",
+              "Auction",
+              "Route Building",
+              "Resource Management"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "game_name": "Clank!",
+          "match_score": 88,
+          "match_explanation": "Clank! aligns well with your preference for deck-building mechanics, moderate complexity, and group play. It balances push-your-luck elements with exploration and strategic choices.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/PwUDN4rx07wuh1pD3Ai7IA0dLkY=/0x0/pic3036599.jpg",
+          "key_attributes": {
+            "player_count": "2-4",
+            "complexity": "Medium",
+            "play_time": "45-90 minutes",
+            "themes": [
+              "Deck Building",
+              "Adventure",
+              "Exploration",
+              "Push Your Luck"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "game_name": "Sheriff of Nottingham",
+          "match_score": 83,
+          "match_explanation": "This game is a great pick for 3-6 players seeking bluffing, negotiation, and lively player interactions. Sheriff of Nottingham delivers short play sessions and lots of social dynamics, matching your listed interests.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/VN6JXvlwTtrMM4gP_8MwDRwKIEw=/0x0/pic2439223.jpg",
+          "key_attributes": {
+            "player_count": "3-6",
+            "complexity": "Light-Medium",
+            "play_time": "40-60 minutes",
+            "themes": [
+              "Bluffing",
+              "Set Collection",
+              "Negotiation",
+              "Hand Management"
+            ]
+          }
+        }
+      ],
+      "quiz_summary": {
+        "total_questions_asked": 6,
+        "user_preferences_identified": {
+          "player_count": "3-6 players",
+          "complexity": "Medium",
+          "themes": [
+            "Strategy",
+            "Economic",
+            "Interaction",
+            "Deck Building"
+          ],
+          "play_time": "60-120 minutes"
+        }
+      }
+    },
+    "metadata": {
+      "agent_name": "Game Matchmaker Agent",
+      "timestamp": "2026-02-05T10:35:00Z"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-05T18:25:14.324080",
+  "test_message_used": "Provide sample recommendations for testing",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "quiz_status": "complete",
+      "recommendations": [
+        {
+          "rank": 1,
+          "game_name": "Powergrid",
+          "match_score": 94,
+          "match_explanation": "Ideal for groups of 2-6 seeking strategic depth, Powergrid excels at resource management and auction mechanics. Your preferences for economic themes, route building, and complex player interaction are perfectly represented here.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/HlhF_mQ2DRLjg9qR-AIEzT84YrM=/0x0/pic445812.jpg",
+          "key_attributes": {
+            "player_count": "2-6",
+            "complexity": "Medium-Heavy",
+            "play_time": "90-120 minutes",
+            "themes": [
+              "Economic",
+              "Auction",
+              "Route Building",
+              "Resource Management"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "game_name": "Clank!",
+          "match_score": 88,
+          "match_explanation": "Clank! aligns well with your preference for deck-building mechanics, moderate complexity, and group play. It balances push-your-luck elements with exploration and strategic choices.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/PwUDN4rx07wuh1pD3Ai7IA0dLkY=/0x0/pic3036599.jpg",
+          "key_attributes": {
+            "player_count": "2-4",
+            "complexity": "Medium",
+            "play_time": "45-90 minutes",
+            "themes": [
+              "Deck Building",
+              "Adventure",
+              "Exploration",
+              "Push Your Luck"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "game_name": "Sheriff of Nottingham",
+          "match_score": 83,
+          "match_explanation": "This game is a great pick for 3-6 players seeking bluffing, negotiation, and lively player interactions. Sheriff of Nottingham delivers short play sessions and lots of social dynamics, matching your listed interests.",
+          "box_art_url": "https://cf.geekdo-images.com/original/img/VN6JXvlwTtrMM4gP_8MwDRwKIEw=/0x0/pic2439223.jpg",
+          "key_attributes": {
+            "player_count": "3-6",
+            "complexity": "Light-Medium",
+            "play_time": "40-60 minutes",
+            "themes": [
+              "Bluffing",
+              "Set Collection",
+              "Negotiation",
+              "Hand Management"
+            ]
+          }
+        }
+      ],
+      "quiz_summary": {
+        "total_questions_asked": 6,
+        "user_preferences_identified": {
+          "player_count": "3-6 players",
+          "complexity": "Medium",
+          "themes": [
+            "Strategy",
+            "Economic",
+            "Interaction",
+            "Deck Building"
+          ],
+          "play_time": "60-120 minutes"
+        }
+      }
+    },
+    "metadata": {
+      "agent_name": "Game Matchmaker Agent",
+      "timestamp": "2026-02-05T10:35:00Z"
+    }
+  }
+}

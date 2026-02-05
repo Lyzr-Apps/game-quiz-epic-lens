@@ -1,0 +1,57 @@
+{
+  "workflow_created": true,
+  "workflow_type": "single_agent",
+  "total_agents": 1,
+  "agents": [
+    {
+      "agent_id": "6984dfd4ee065bca253754c6",
+      "name": "Game Matchmaker Agent",
+      "type": "Single",
+      "status": "created",
+      "has_knowledge_base": true,
+      "rag_id": "6984dfaf60cd1fd2d988d893",
+      "rag_name": "boardgamescollectionru1x",
+      "tools": ["composio_search"],
+      "response_schema_saved": true
+    }
+  ],
+  "knowledge_bases": [
+    {
+      "rag_id": "6984dfaf60cd1fd2d988d893",
+      "rag_name": "boardgamescollectionru1x",
+      "name": "Board Games Collection",
+      "files_ingested": 1,
+      "ingestion_status": "started"
+    }
+  ],
+  "workflow_nodes": [
+    {
+      "id": "user_input",
+      "type": "Input",
+      "label": "User Quiz Response"
+    },
+    {
+      "id": "game_matchmaker_agent",
+      "type": "Agent",
+      "label": "Game Matchmaker Agent",
+      "agent_id": "6984dfd4ee065bca253754c6"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Quiz Question or Recommendations"
+    }
+  ],
+  "workflow_edges": [
+    {
+      "source": "user_input",
+      "target": "game_matchmaker_agent"
+    },
+    {
+      "source": "game_matchmaker_agent",
+      "target": "output_node"
+    }
+  ],
+  "created_at": "2026-02-05T00:00:00Z",
+  "last_updated": "2026-02-05T00:00:00Z"
+}
